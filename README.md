@@ -58,3 +58,8 @@ To install appledoc run the following commands:<br>
 3. Run the installation script<br>
 ```sudo sh install-appledoc.sh```
 
+## License
+
+See the LICENSE file for license rights and limitations (BSD-3-Clause).
+
+Enjoy!
