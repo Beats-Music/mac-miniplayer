@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B3116" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="DSYAlbum" representedClassName="DSYAlbum" syncable="YES">
+        <attribute name="artistDisplayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="canonical" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="editedVersion" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="essential" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentalAdvisory" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="popularity" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="rating" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="releaseDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="releaseFormat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="streamable" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="totalCompanionAlbums" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="totalTracks" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tracks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DSYTrack" inverseName="albums" inverseEntity="DSYTrack" syncable="YES"/>
+    </entity>
+    <entity name="DSYPlaylist" representedClassName="DSYPlaylist" syncable="YES">
+        <attribute name="access" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="created_at" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parental_advisory" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="totalSubscribers" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="totalTracks" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="userDisplayName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="DSYTrack" representedClassName="DSYTrack" syncable="YES">
+        <attribute name="artistDisplayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="discNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="editedVersion" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentalAdvisory" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="popularity" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="releaseDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="streamable" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trackPosition" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="albums" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DSYAlbum" inverseName="tracks" inverseEntity="DSYAlbum" syncable="YES"/>
+    </entity>
+    <entity name="DSYUser" representedClassName="DSYUser" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="DSYAlbum" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="DSYTrack" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="DSYUser" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="DSYPlaylist" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>
