@@ -18,7 +18,9 @@ DerivedData
 *.xccheckout
 .DS_STORE
 
-#CocoaPods
+# CocoaPods
 Pods
 Podfile.lock
 
+# Documentation
+documentation
