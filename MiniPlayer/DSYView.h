@@ -14,6 +14,7 @@
  */
 @interface DSYView : NSView
 
+#pragma mark - Getting The Hover State
 ///-----------------------------------------------------------
 /// @name Getting The Hover State
 ///-----------------------------------------------------------
@@ -33,6 +34,7 @@
  */
 @property (nonatomic,assign) id<DSYViewDelegate> viewDelegate;
 
+#pragma mark - Look and Feel
 ///-----------------------------------------------------------
 /// @name Look and Feel
 ///-----------------------------------------------------------
@@ -42,6 +44,7 @@
  */
 @property (nonatomic,strong) NSColor *backgroundColor;
 
+#pragma mark - Setting The Cursor
 ///-----------------------------------------------------------
 /// @name Setting The Cursor
 ///-----------------------------------------------------------
@@ -51,6 +54,7 @@
  */
 @property (nonatomic,strong) NSCursor *cursor;
 
+#pragma mark - Resetting The Tracking Areas
 ///-----------------------------------------------------------
 /// @name Resetting The Tracking Areas
 ///-----------------------------------------------------------

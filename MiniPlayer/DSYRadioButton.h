@@ -8,6 +8,9 @@
 
 #import "DSYButton.h"
 
+/**
+ The DSYRadioButton, a subclass of the DSYButton, provides a button optimized for a radio layout. This means it will not retrigger an action when its buttonOnOffState is equal to DSYButtonOnOffStateOn.
+ */
 @interface DSYRadioButton : DSYButton
 
 @end

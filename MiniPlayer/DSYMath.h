@@ -8,7 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ The DSYMath, a subclass of NSObject, provides class methods to perform common mathematical operations. Very useful for custom drawing!
+ */
 @interface DSYMath : NSObject
+
+#pragma mark - Mapping A Value
+///-----------------------------------------------------------
+/// @name Mapping A Value
+///-----------------------------------------------------------
 
 /**
  Maps a value from one coordinate system to another (2-D)
@@ -24,14 +32,5 @@
          leftMax:(float)leftMax
         rightMin:(float)rightMin
         rightMax:(float)rightMax;
-
-/**
- Calculates the root mean squared value for an array of values
- @param buffer     An array of floats to use to calculate the rms
- @param bufferSize The size of the float array
- @return A float representing the root mean squared value of the array
- */
-+(float)rmsForArray:(float *)buffer
-             length:(int)bufferSize;
 
 @end

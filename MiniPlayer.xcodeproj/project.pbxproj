@@ -134,8 +134,6 @@
 		31FD12B018C7D44700A33353 /* ZKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD12AC18C7D44700A33353 /* ZKTextField.m */; };
 		31FD12B118C7D44700A33353 /* DSYInputTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD12AE18C7D44700A33353 /* DSYInputTextField.m */; };
 		31FD12B218C7D44700A33353 /* DSYInputTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD12AE18C7D44700A33353 /* DSYInputTextField.m */; };
-		31FD12B718C7D9E300A33353 /* DSYSearchIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD12B618C7D9E300A33353 /* DSYSearchIconView.m */; };
-		31FD12B818C7D9E300A33353 /* DSYSearchIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD12B618C7D9E300A33353 /* DSYSearchIconView.m */; };
 		31FD12BB18C7DEC900A33353 /* DSYAlbumTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD12BA18C7DEC900A33353 /* DSYAlbumTableCellView.m */; };
 		31FD12BC18C7DEC900A33353 /* DSYAlbumTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD12BA18C7DEC900A33353 /* DSYAlbumTableCellView.m */; };
 		31FD22D418C2A9C6004DC4D9 /* DSYAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FD22D318C2A9C6004DC4D9 /* DSYAPIClient.m */; };
@@ -295,8 +293,6 @@
 		31FD12AC18C7D44700A33353 /* ZKTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKTextField.m; sourceTree = "<group>"; };
 		31FD12AD18C7D44700A33353 /* DSYInputTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSYInputTextField.h; sourceTree = "<group>"; };
 		31FD12AE18C7D44700A33353 /* DSYInputTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSYInputTextField.m; sourceTree = "<group>"; };
-		31FD12B518C7D9E300A33353 /* DSYSearchIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSYSearchIconView.h; sourceTree = "<group>"; };
-		31FD12B618C7D9E300A33353 /* DSYSearchIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSYSearchIconView.m; sourceTree = "<group>"; };
 		31FD12B918C7DEC900A33353 /* DSYAlbumTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSYAlbumTableCellView.h; sourceTree = "<group>"; };
 		31FD12BA18C7DEC900A33353 /* DSYAlbumTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSYAlbumTableCellView.m; sourceTree = "<group>"; };
 		31FD22D218C2A9C6004DC4D9 /* DSYAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSYAPIClient.h; sourceTree = "<group>"; };
@@ -688,15 +684,6 @@
 			name = Forked;
 			sourceTree = "<group>";
 		};
-		31FD12B418C7D9CC00A33353 /* Icon */ = {
-			isa = PBXGroup;
-			children = (
-				31FD12B518C7D9E300A33353 /* DSYSearchIconView.h */,
-				31FD12B618C7D9E300A33353 /* DSYSearchIconView.m */,
-			);
-			name = Icon;
-			sourceTree = "<group>";
-		};
 		31FD22D018C28C20004DC4D9 /* Window */ = {
 			isa = PBXGroup;
 			children = (
@@ -832,7 +819,6 @@
 				31C18C3718C44CAD000E29E8 /* DSYViewDelegate.h */,
 				31FD230F18C2EC0A004DC4D9 /* DSYView.h */,
 				31FD231018C2EC0A004DC4D9 /* DSYView.m */,
-				31FD12B418C7D9CC00A33353 /* Icon */,
 				31C18BD518C3DAC9000E29E8 /* Image */,
 				31C18BC018C3D473000E29E8 /* Slider */,
 			);
@@ -1149,7 +1135,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/appledoc \\\n--project-name \"Beats Music MiniPlayer\" \\\n--project-company \"Beats Music\" \\\n--company-id \"com.beatsmusic\" \\\n--output documentation \\\n--create-html \\\n--keep-intermediate-files \\\n--create-docset \\\n--install-docset \\\n--exit-threshold 2 \\\n--no-repeat-first-par \\\nMiniPlayer";
+			shellScript = "/usr/local/bin/appledoc \\\n--project-name \"Beats Music MiniPlayer\" \\\n--project-company \"Beats Music\" \\\n--company-id \"com.beatsmusic\" \\\n--output documentation \\\n--create-html \\\n--keep-intermediate-files \\\n--create-docset \\\n--install-docset \\\n--exit-threshold 2 \\\n--no-repeat-first-par \\\n--index-desc \"${PROJECT_DIR}/README.md\" \\\nMiniPlayer";
 		};
 		31FD22F118C2BF66004DC4D9 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1172,7 +1158,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				31FD22EC18C2BC96004DC4D9 /* NSManagedObject+Import.m in Sources */,
-				31FD12B718C7D9E300A33353 /* DSYSearchIconView.m in Sources */,
 				31FD125A18C7243E00A33353 /* DSYUser.m in Sources */,
 				31FD12A118C7C64100A33353 /* DSYRTMPPlayerQueue.m in Sources */,
 				31FDB46818C26C47003B0A2D /* main.m in Sources */,
@@ -1257,7 +1242,6 @@
 				31FD233318C3CCFF004DC4D9 /* DSYLoveButton.m in Sources */,
 				31C18BBF18C3D40F000E29E8 /* DSYAddButton.m in Sources */,
 				31FD12BC18C7DEC900A33353 /* DSYAlbumTableCellView.m in Sources */,
-				31FD12B818C7D9E300A33353 /* DSYSearchIconView.m in Sources */,
 				31FD22D518C2A9C6004DC4D9 /* DSYAPIClient.m in Sources */,
 				31C1900718C528DC000E29E8 /* DSYRTMPPlayer.m in Sources */,
 				31FD22FB18C2C088004DC4D9 /* DSYTrack.m in Sources */,

@@ -4,10 +4,6 @@
 //  The contents of this file are implicitly included at the beginning of every source file.
 //
 
-#define MINI_PLAYER_ACCESS_TOKEN   @"bqdxfb4ecmnbsy7b9eg8bucw"
-#define MINI_PLAYER_CLIENT_ID      @"kwqda6y53fn29p35zmmgwkge"
-#define MINI_PLAYER_CLIENT_SECRET  @"Fq4kRWSXdvuYZJn6nXVqRr8P"
-
 #ifdef __OBJC__
 
     // Frameworks

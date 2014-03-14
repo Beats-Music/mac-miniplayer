@@ -8,6 +8,9 @@
 
 #import "DSYButton.h"
 
+/**
+ The DSYPlayButton, a subclass of the DSYButton, provides a button with custom play/pause icons drawn inside using PaintCode. Triggers between the states via the buttonOnOffState property.
+ */
 @interface DSYPlayButton : DSYButton
 
 @end

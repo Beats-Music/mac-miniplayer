@@ -16,6 +16,12 @@
 @protocol DSYSignInWindowControllerDelegate <NSObject>
 
 @required
+
+#pragma mark - Sign In Notifications
+///-----------------------------------------------------------
+/// @name Sign In Notifications
+///-----------------------------------------------------------
+
 /**
  Notifies a receiver of a successful login by providing the auth token as an NSString.
  @param windowController The DSYSignInWindowController that triggered the event.
@@ -31,12 +37,22 @@
  */
 @interface DSYSignInWindowController : NSWindowController
 
+#pragma mark - Class Initializer
+///-----------------------------------------------------------
+/// @name Class Initializer
+///-----------------------------------------------------------
+
 /**
  Provides a class initializer for the DSYSignInWindowController using a specified delegate to receive the auth token callback.
  @param signInWindowControllerDelegate The DSYSignInWindowControllerDelegate to receive the auth token upon success.
  @return A DSYSignInWindowController instance initialized with the xib file from the same name and assigned the provided DSYSignInWindowControllerDelegate.
  */
 +(instancetype)signInWindowControllerWithDelegate:(id<DSYSignInWindowControllerDelegate>)signInWindowControllerDelegate;
+
+#pragma mark - Properties
+///-----------------------------------------------------------
+/// @name Properties
+///-----------------------------------------------------------
 
 /**
  The DSYSignInWindowControllerDelegate that will receive the auth token upon successful login.

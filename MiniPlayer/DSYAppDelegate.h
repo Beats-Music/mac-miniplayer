@@ -9,9 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 #import "DSYView.h"
-#import "DSYImageView.h"
 #import "DSYSliderView.h"
-#import "DSYSliderKnobView.h"
 
 // Dynamic
 #import "DSYAlbumViewController.h"
@@ -25,39 +23,132 @@
 #import "DSYNavigationButtonsViewController.h"
 #import "DSYNowPlayingViewController.h"
 
+// Windows
 #import "DSYSignInWindowController.h"
 
+/**
+ <#Description#>
+ */
 @interface DSYAppDelegate : NSObject <NSApplicationDelegate,DSYSignInWindowControllerDelegate,DSYViewDelegate>
 
+#pragma mark - Properties
+///-----------------------------------------------------------
+/// @name Properties
+///-----------------------------------------------------------
+
+/**
+ <#Description#>
+ */
 @property (nonatomic,copy) NSString *fullScreenMenuItemTitle;
+
+/**
+ <#Description#>
+ */
 @property (nonatomic,assign) BOOL hasUser;
+
+/**
+ <#Description#>
+ */
 @property (assign) IBOutlet NSWindow *window;
 
 #pragma mark - Sign In Window
+///-----------------------------------------------------------
+/// @name Sign In Window
+///-----------------------------------------------------------
+
+/**
+ <#Description#>
+ */
 @property (nonatomic,strong) DSYSignInWindowController *signInWindowController;
 
-#pragma mark - View Controllers
-@property (nonatomic,weak) IBOutlet DSYSliderView     *sliderView;
-@property (nonatomic,weak) IBOutlet DSYSliderKnobView *sliderKnobView;
-@property (nonatomic,weak) IBOutlet DSYImageView      *imageView;
+#pragma mark - Audio Player Controls
+///-----------------------------------------------------------
+/// @name Audio Player Controls
+///-----------------------------------------------------------
+
+/**
+ <#Description#>
+ */
+@property (nonatomic,weak) IBOutlet DSYSliderView *sliderView;
 
 #pragma mark - Content Views
+///-----------------------------------------------------------
+/// @name Content Views
+///-----------------------------------------------------------
+
+/**
+ <#Description#>
+ */
 @property (nonatomic,weak) IBOutlet NSView  *nonFullScreenView;
+
+/**
+ <#Description#>
+ */
 @property (nonatomic,weak) IBOutlet DSYView *contentView;
+
+/**
+ <#Description#>
+ */
 @property (nonatomic,weak) IBOutlet DSYView *controlsContainerView;
+
+/**
+ <#Description#>
+ */
 @property (nonatomic,weak) IBOutlet DSYView *navigationButtonsView;
 
-#pragma mark - View Controllers
+#pragma mark - Content View Controllers
+///-----------------------------------------------------------
+/// @name Content View Controllers
+///-----------------------------------------------------------
+
+/**
+ <#Description#>
+ */
 @property (nonatomic,assign) DSYViewController *currentViewController;
+
+/**
+ <#Description#>
+ */
 @property (nonatomic,strong) DSYAlbumViewController *albumViewController;
+
+/**
+ <#Description#>
+ */
 @property (nonatomic,strong) DSYPlaylistViewController *playlistsViewController;
+
+/**
+ <#Description#>
+ */
 @property (nonatomic,strong) DSYPlaylistTableViewController *playlistTableViewController;
+
+/**
+ <#Description#>
+ */
 @property (nonatomic,strong) DSYSearchViewController *searchViewController;
 
 #pragma mark - Static View Controllers
-@property (nonatomic,strong) DSYButtonsViewController           *buttonsViewController;
-@property (nonatomic,strong) DSYFullScreenViewController        *fullScreenViewController;
+///-----------------------------------------------------------
+/// @name Static View Controllers
+///-----------------------------------------------------------
+
+/**
+ <#Description#>
+ */
+@property (nonatomic,strong) DSYButtonsViewController *buttonsViewController;
+
+/**
+ <#Description#>
+ */
+@property (nonatomic,strong) DSYFullScreenViewController *fullScreenViewController;
+
+/**
+ <#Description#>
+ */
 @property (nonatomic,strong) DSYNavigationButtonsViewController *navigationButtonsViewController;
-@property (nonatomic,strong) DSYNowPlayingViewController        *nowPlayingViewController;
+
+/**
+ <#Description#>
+ */
+@property (nonatomic,strong) DSYNowPlayingViewController *nowPlayingViewController;
 
 @end

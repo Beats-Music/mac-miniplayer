@@ -16,6 +16,7 @@
  */
 @interface DSYTextField : NSTextField
 
+#pragma mark - Overriding The Custom Font
 ///-----------------------------------------------------------
 /// @name Overriding The Custom Font
 ///-----------------------------------------------------------

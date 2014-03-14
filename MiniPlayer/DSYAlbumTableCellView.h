@@ -8,6 +8,9 @@
 
 #import "DSYPlaylistCellView.h"
 
+/**
+ The DSYAlbumTableCellView, a subclass of the DSYPlaylistCellView, provides a custom tableview cell to display DSYAlbum objects and contains an image, title label, and subtitle label.
+ */
 @interface DSYAlbumTableCellView : DSYPlaylistCellView
 
 @end

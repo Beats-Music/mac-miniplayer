@@ -8,7 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ The NSDate+Import category extension provides class methods to quickly import dates from strings by specifying the date format.
+ */
 @interface NSDate (Import)
+
+#pragma mark - Dates From Strings
+///-----------------------------------------------------------
+/// @name Dates From Strings
+///-----------------------------------------------------------
 
 /**
  Creates an NSDate instance from a string that is 'yyyy-MM-dd' formatted. If the string does not match the NSDate 'yyyy-MM-dd' format, then nil will be returned. If the string is nil then it will just return back nil.

@@ -8,6 +8,9 @@
 
 #import "DSYButton.h"
 
+/**
+ The DSYHateButton, a subclass of the DSYButton, provides a button with a custom crossed out heart icon drawn inside using PaintCode.
+ */
 @interface DSYHateButton : DSYButton
 
 @end

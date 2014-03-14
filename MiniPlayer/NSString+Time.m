@@ -10,9 +10,9 @@
 
 @implementation NSString (Time)
 
-+(NSString *)stringWithTimeIntervel:(NSTimeInterval)timeIntervel
++(NSString *)stringWithTimeInterval:(NSTimeInterval)timeInterval
 {
-    NSInteger ti = (NSInteger)timeIntervel;
+    NSInteger ti = (NSInteger)timeInterval;
     NSInteger seconds = ti % 60;
     NSInteger minutes = (ti / 60) % 60;
     return [NSString stringWithFormat:@"%02li:%02li", (long)minutes, (long)seconds];

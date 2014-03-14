@@ -9,7 +9,15 @@
 #import <Cocoa/Cocoa.h>
 #import "DSYImageView.h"
 
+/**
+ The DSYTrackTableCellView, a subclass of the NSTableCellView, provides a custom tableview cell with a background color, an image, a title label, a subtitle label, a track number box (colored gray), and a track number label.
+ */
 @interface DSYTrackTableCellView : NSTableCellView
+
+#pragma mark - Properties
+///-----------------------------------------------------------
+/// @name Properties
+///-----------------------------------------------------------
 
 /**
  An NSColor representing the background color for the view.

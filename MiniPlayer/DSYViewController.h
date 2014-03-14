@@ -13,6 +13,7 @@
  */
 @interface DSYViewController : NSViewController
 
+#pragma mark - Properties
 ///-----------------------------------------------------------
 /// @name Properties
 ///-----------------------------------------------------------
@@ -22,6 +23,7 @@
  */
 @property (nonatomic,assign) BOOL hasData;
 
+#pragma mark - Class Initializer
 ///-----------------------------------------------------------
 /// @name Class Initializer
 ///-----------------------------------------------------------
@@ -32,6 +34,7 @@
  */
 +(id)viewControllerWithXib;
 
+#pragma mark - Initializing The View Controller
 ///-----------------------------------------------------------
 /// @name Initializing The View Controller
 ///-----------------------------------------------------------

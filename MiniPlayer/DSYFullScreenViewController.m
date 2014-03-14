@@ -8,6 +8,9 @@
 
 #import "DSYFullScreenViewController.h"
 
+#import "DSYImageView.h"
+#import "DSYLargeImageView.h"
+
 @implementation DSYFullScreenViewController
 
 #pragma mark - Initialization

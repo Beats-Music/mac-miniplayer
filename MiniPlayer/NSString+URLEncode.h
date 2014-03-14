@@ -10,6 +10,11 @@
 
 @interface NSString (URLEncode)
 
+#pragma mark - URL Encoding Strings
+///-----------------------------------------------------------
+/// @name URL Encoding Strings
+///-----------------------------------------------------------
+
 /**
  Creates a string that replaces all URL problematic characters with their URL encoded friendly equivalent.
  @return The NSString representing the URL encoded version of the string.

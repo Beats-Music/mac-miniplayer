@@ -19,7 +19,6 @@
 #pragma mark - NSApplication Notifications
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    
     // Checks for valid client id, client secret, and redirect uri keys in keys.plist file
     [self _checkForValidKeys];
     
@@ -137,10 +136,7 @@
 }
 
 -(void)_initializeControlsView
-{
-    // Setup slider
-    self.sliderView.sliderKnobView = self.sliderKnobView;
-    
+{    
     // Listen for hover events
     self.controlsContainerView.viewDelegate = self;
     
@@ -256,12 +252,6 @@
     self.playlistTableViewController = [DSYPlaylistTableViewController playlistTableViewControllerWithPlaylist:playlist];
     self.currentViewController = self.playlistTableViewController;
     [self.contentView addSubviewFromViewController:self.currentViewController];
-    
-    [self.sliderView setHidden:YES];
-    [self.sliderKnobView setHidden:YES];
-    
-    [self.sliderView setHidden:NO];
-    [self.sliderKnobView setHidden:NO];
     
     // Navigating to a subpage (navigation bar will unselect)
     [[NSNotificationCenter defaultCenter] postNotificationName:kDSYGeneralNotificationNavigatedToSubpage

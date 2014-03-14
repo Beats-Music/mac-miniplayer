@@ -77,7 +77,7 @@
         playlistCell.titleLabel.stringValue        = playlist.name;
 
         NSString *songLabel = playlist.totalTracksValue == 1 ? @"Song" : @"Songs";
-        playlistCell.subtitleLabel.stringValue     = [NSString stringWithFormat:@"%@ • %@ %@ • %@",playlist.userDisplayName,playlist.totalTracks,songLabel,[NSString stringWithTimeIntervel:playlist.durationValue]];
+        playlistCell.subtitleLabel.stringValue     = [NSString stringWithFormat:@"%@ • %@ %@ • %@",playlist.userDisplayName,playlist.totalTracks,songLabel,[NSString stringWithTimeInterval:playlist.durationValue]];
         
         // try to load the image async
         [[DSYAPIClient sharedAPI] getPlaylistArtWithPlaylistId:playlist.id parameters:Nil finishedLoading:^{

@@ -8,6 +8,9 @@
 
 #import "DSYButton.h"
 
+/**
+ The DSYShareButton, a subclass of the DSYButton, provides a button with a custom share icon drawn inside using PaintCode.
+ */
 @interface DSYShareButton : DSYButton
 
 @end

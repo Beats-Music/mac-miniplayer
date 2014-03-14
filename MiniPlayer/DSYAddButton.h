@@ -8,6 +8,9 @@
 
 #import "DSYButton.h"
 
+/**
+ The DSYAddButton, a subclass of the DSYButton, provides a button with a custom plus icon drawn inside using PaintCode.
+ */
 @interface DSYAddButton : DSYButton
 
 @end

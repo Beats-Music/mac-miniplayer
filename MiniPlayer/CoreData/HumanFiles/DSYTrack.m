@@ -34,20 +34,6 @@
     }];
 }
 
-+(NSArray *)tracksWithSearchDictionaries:(NSArray *)searchDictionaries
-{
-    return [self importObjects:searchDictionaries
-                     inContext:[NSManagedObjectContext MR_contextForCurrentThread]
-               usingEntityName:self.className
-                  onPrimaryKey:@"id"
-                    withUpdate:^(NSManagedObject *object, NSDictionary *info, NSManagedObjectContext *context) {
-                        DSYTrack *track = (DSYTrack *)object;
-                        track.id                = [info objectForKeyOrNil:@"id"];
-                        track.title             = [info objectForKeyOrNil:@"display"];
-                        track.artistDisplayName = [info objectForKeyOrNil:@"detail"];
-                    }];
-}
-
 #pragma mark - Getting Stream Info
 -(void)getRTMPStreamWithCompletion:(void (^)(DSYRTMPObject *, NSError *))completionBlock
 {

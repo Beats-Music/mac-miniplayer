@@ -8,8 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ The NSString+Time category extension provides a way to get formatted 'mm:ss' string representations of a time in seconds.
+ */
 @interface NSString (Time)
 
-+(NSString *)stringWithTimeIntervel:(NSTimeInterval)timeIntervel;
+#pragma mark - String From Time Interval
+///-----------------------------------------------------------
+/// @name String From Time Interval
+///-----------------------------------------------------------
+
+/**
+ Provides a string formatted as 'mm:ss' from a time intervel provided in seconds.
+ @param timeIntervel An NSTimeIntervel representing the time intervel in seconds.
+ @return An NSString formatted as 'mm:ss' representing the input NSTimeInterval.
+ */
++(NSString *)stringWithTimeInterval:(NSTimeInterval)timeInterval;
 
 @end

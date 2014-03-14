@@ -16,6 +16,12 @@
 @protocol DSYSliderViewDelegate <NSObject>
 
 @required
+
+#pragma mark - Updating The Slider Value
+///-----------------------------------------------------------
+/// @name Updating The Slider Value
+///-----------------------------------------------------------
+
 /**
  Provides a receiver a notification whenever a DSYSliderView has a mouse down event.
  @param sliderView The DSYSliderView that triggered the mouse event.

@@ -8,6 +8,9 @@
 
 #import "DSYRadioButton.h"
 
+/**
+ The DSYPlaylistButton, a subclass of the DSYRadioButton, provides a button with a custom playlist icon drawn inside using PaintCode.
+ */
 @interface DSYPlaylistButton : DSYRadioButton
 
 @end

@@ -8,6 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 
+/**
+ The DSYTableRowView, a subclass of the NSTableRowView, provides a custom tableview row view that draws a custom selection color for a selected row.
+ */
 @interface DSYTableRowView : NSTableRowView
 
 @end

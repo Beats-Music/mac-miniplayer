@@ -8,6 +8,9 @@
 
 #import "DSYButton.h"
 
+/**
+ The DSYForwardButton, a subclass of the DSYButton, provides a playback button with a custom back icon drawn inside using PaintCode.
+ */
 @interface DSYBackButton : DSYButton
 
 @end

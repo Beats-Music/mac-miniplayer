@@ -15,6 +15,12 @@
 @protocol DSYViewDelegate <NSObject>
 
 @optional
+
+#pragma mark - Mouse Events
+///-----------------------------------------------------------
+/// @name Mouse Events
+///-----------------------------------------------------------
+
 /**
  Triggered anytime a DSYView receives a mouse enter event.
  @param view The DSYView that triggered the event.

@@ -98,7 +98,7 @@
                                        @"%li • %i Songs • %@",
                                        year,
                                        self.playlist.totalTracksValue,
-                                       [NSString stringWithTimeIntervel:self.playlist.durationValue]];
+                                       [NSString stringWithTimeInterval:self.playlist.durationValue]];
     
     // Username of person or organization that created the playlist
     self.secondaryLabel.stringValue = [NSString stringWithFormat:

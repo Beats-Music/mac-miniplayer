@@ -8,6 +8,9 @@
 
 #import "DSYButton.h"
 
+/**
+ The DSYShowMoreButton, a subclass of the DSYButton, provides a button with a custom show more icon (dot dot dot) drawn inside using PaintCode.
+ */
 @interface DSYShowMoreButton : DSYButton
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "DSYViewController.h"
+
+// Custom TableView Components
 #import "DSYImageView.h"
 #import "DSYTableRowView.h"
 #import "DSYAlbumTableCellView.h"
@@ -14,13 +16,16 @@
 #import "DSYPlaylistCellView.h"
 #import "DSYTrackTableCellView.h"
 
-@class DSYImageView;
-
+/**
+ The DSYTableViewController, a subclass of the DSYViewController, provides the base table view controller class that subclasses such as the DSYPlaylistTableViewController and the DSYAlbumViewController extend for tableview-based layouts.
+ */
 @interface DSYTableViewController : DSYViewController <NSTableViewDataSource,NSTableViewDelegate>
 
+#pragma mark - Properties
 ///-----------------------------------------------------------
 /// @name Properties
 ///-----------------------------------------------------------
+
 /**
  An NSImage to use to display the artist's image.
  */

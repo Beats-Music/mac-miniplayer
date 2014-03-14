@@ -22,12 +22,4 @@
     return rightMin + (valueScaled * rightSpan);
 }
 
-+(float)rmsForArray:(float *)buffer
-             length:(int)bufferSize {
-    float sum = 0.0;
-    for(int i = 0; i < bufferSize; i++)
-        sum += buffer[i] * buffer[i];
-    return sqrtf( sum / bufferSize );
-}
-
 @end

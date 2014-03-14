@@ -16,6 +16,11 @@
 
 @optional
 
+#pragma mark - Text Changed Notification
+///-----------------------------------------------------------
+/// @name Text Changed Notification
+///-----------------------------------------------------------
+
 /**
  Notifies the DSYInputTextFieldDelegate of a change in the string value of the containing DSYInputTextField.
  @param inputField The DSYInputTextField whose string value changed
@@ -26,12 +31,17 @@
 @end
 
 /**
- The DSYInputTextField provides a basic text for normal and secure text input that is optimized for the Beats Music brand look.
+ The DSYInputTextField, a subclass of the ZKTextField, provides a basic text for normal and secure text input that is optimized for the Beats Music brand look.
  */
 @interface DSYInputTextField : ZKTextField <NSTextViewDelegate,NSTextDelegate>
 
+#pragma mark - Properties
+///-----------------------------------------------------------
+/// @name Properties
+///-----------------------------------------------------------
+
 /**
- The DSYInputTextFieldDelegate to receive the 'textChanged' notification
+ The DSYInputTextFieldDelegate to receive the `textChanged` notification
  */
 @property (nonatomic,assign) id<DSYInputTextFieldDelegate> inputTextFieldDelegate;
 

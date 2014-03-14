@@ -8,6 +8,9 @@
 
 #import "DSYRadioButton.h"
 
+/**
+ The DSYSearchButton, a subclass of the DSYRadioButton, provides a button with a custom search icon drawn inside using PaintCode.
+ */
 @interface DSYSearchButton : DSYRadioButton
 
 @end

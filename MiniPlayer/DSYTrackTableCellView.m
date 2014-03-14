@@ -8,11 +8,6 @@
 
 #import "DSYTrackTableCellView.h"
 
-@interface DSYTrackTableCellView ()
-{
-}
-@end
-
 @implementation DSYTrackTableCellView
 
 -(void)awakeFromNib

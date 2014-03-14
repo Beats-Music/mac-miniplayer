@@ -13,6 +13,11 @@
  */
 @interface DSYImageView : DSYView
 
+#pragma mark - Properties
+///-----------------------------------------------------------
+/// @name Properties
+///-----------------------------------------------------------
+
 /**
  An NSImage to draw within the bounds of the view.
  */
