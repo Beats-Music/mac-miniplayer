@@ -1443,13 +1443,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MiniPlayer/MiniPlayer-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "MiniPlayer/MiniPlayer-Info.plist";
 				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = (
-					/usr/local/lib,
-					"/usr/local/Cellar/rtmpdump/2.4+20121230/lib",
-					"/Users/dre/Documents/haris/sxsw-mini-player",
-				);
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-framework",
@@ -1475,6 +1472,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = NO;
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1486,13 +1484,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MiniPlayer/MiniPlayer-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "MiniPlayer/MiniPlayer-Info.plist";
 				INSTALL_PATH = "";
-				LIBRARY_SEARCH_PATHS = (
-					/usr/local/lib,
-					"/usr/local/Cellar/rtmpdump/2.4+20121230/lib",
-					"/Users/dre/Documents/haris/sxsw-mini-player",
-				);
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-framework",
@@ -1518,6 +1513,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = NO;
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
